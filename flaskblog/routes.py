@@ -1,13 +1,8 @@
-from flask import Flask,render_template,url_for,request, redirect, flash
-from flask.templating import render_template_string
-from flask_wtf import form
-from wtforms.form import Form
-from forms import RegistrationForm, LoginForm
 
-app = Flask (__name__)
-
-
-app.config['SECRET_KEY'] = '5522abcd8'
+from flaskblog import app
+from flask import  render_template, url_for, flash, redirect
+from flaskblog.forms import RegistrationForm, LoginForm
+from flaskblog.models import User, Posts
 
 posts = [
     {
@@ -23,7 +18,7 @@ posts = [
         'date_posted': 'April 21, 2018'
     },
     {
-        'author': 'mel d sol',
+        'author': 'dwayne johnson',
         'title': 'Blog Post 3',
         'content': 'Third post content',
         'date_posted': 'April 22, 2018'
@@ -36,27 +31,28 @@ posts = [
     }
 ]
 
-@app.route('/')
-@app.route('/home')
+
+@app.route("/")
+@app.route("/home")
 def home():
-    return render_template('home.html', posts=posts, title='Blog')    
+    return render_template('home.html', posts=posts)
 
 
-@app.route('/about')
+@app.route("/about")
 def about():
-    return render_template('about.html', title='blog')
+    return render_template('about.html', title='About')
 
-@app.route('/register', methods=['GET', 'POST'])
-def register(): 
+
+@app.route("/register", methods=['GET', 'POST'])
+def register():
     form = RegistrationForm()
     if form.validate_on_submit():
         flash(f'Account created for {form.username.data}!', 'success')
         return redirect(url_for('home'))
     return render_template('register.html', title='Register', form=form)
-    
 
 
-@app.route('/login', methods=['GET', 'POST'])
+@app.route("/login", methods=['GET', 'POST'])
 def login():
     form = LoginForm()
     if form.validate_on_submit():
@@ -68,6 +64,4 @@ def login():
     return render_template('login.html', title='Login', form=form)
 
 
-if __name__ == '__main__':
-    app.run(debug=True)
-    
+
