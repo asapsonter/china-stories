@@ -1,10 +1,10 @@
-{%extends "layout.html"%}
+{% extends "layout.html" %}
 {% block content %}
 <div class="content-section">
     <form method="POST" action="">
         {{ form.hidden_tag() }}
         <fieldset class="form-group">
-            <legend class="border-bottom mb-4">{{legend}}</legend>
+            <legend class="border-bottom mb-4">{{ legend }}</legend>
             <div class="form-group">
                 {{ form.title.label(class="form-control-label") }}
                 {% if form.title.errors %}
@@ -37,4 +37,4 @@
         </div>
     </form>
 </div>
-{%endblock content%}
+{% endblock content %}
