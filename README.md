@@ -38,13 +38,14 @@
 - Werkzeug==2.0.2
 - WTForms==2.3.3
 - zope.interface==5.4.0
-N.B: you MUST be in virtual enviroment to avoid errors.
 
-** you simply copy the requirements from "requirements.txt" from the folder above**
+>N.B: you MUST be in virtual enviroment to avoid errors.
+
+**you simply copy the requirements from "requirements.txt" from the folder above**
 
 ### How to run app on broswers
 Go to command line and run this code.. `python run.py`
-N.B: pls make you are in the file directory.
+>N.B: pls make you are in the file directory.
 
 
 ## How to contribute to this project
