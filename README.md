@@ -8,6 +8,10 @@
 5. Password change and verification
 6. Flash notifications. etc
 
+## How to download file
+* Fork or download repo
+
+
 ##Dependances/Liberies
 - Bootstrap(for styling)
 - autopep8==1.5.7
