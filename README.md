@@ -12,7 +12,7 @@
 * Fork or download repo
 
 
-##Dependances/Liberies
+## Dependances/Liberies
 - Bootstrap(for styling)
 - autopep8==1.5.7
 - bcrypt==3.2.0
