@@ -37,3 +37,8 @@ you can simply fork the project and contribute.*
 Any questions feel free to contact me by email right above my profile.
 
 
+[project](./static/profile pictures/pro1.png)
+[project](./static/profile pictures/pro2.png)
+[project](./static/profile pictures/pro3.png)
+[project](./static/profile pictures/pro4.png)
+[project](./static/profile pictures/pro5.png)
