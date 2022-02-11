@@ -39,6 +39,6 @@ Any questions feel free to contact me by email right above my profile.
 
 ![project!](china-stories/flaskblog/static/profilepictures/pro1.png)
 ![project](../static/pro2.png)
-![project](/static/profilepictures/pro3.png)
-![project](/static/profilepictures/pro4.png)
-![project](/static/profilepictures/pro5.png)
+![project](..static/profilepictures/pro3.png)
+![project](static/profilepictures/pro4.jpg)
+![project](static/profilepictures/pro5.PNG)
